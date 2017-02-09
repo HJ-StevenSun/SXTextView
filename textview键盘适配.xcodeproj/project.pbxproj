@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A6891B71E48271000455996 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6891B61E48271000455996 /* main.m */; };
+		3A6891BA1E48271000455996 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6891B91E48271000455996 /* AppDelegate.m */; };
+		3A6891BD1E48271000455996 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6891BC1E48271000455996 /* ViewController.m */; };
+		3A6891C01E48271000455996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6891BE1E48271000455996 /* Main.storyboard */; };
+		3A6891C21E48271000455996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A6891C11E48271000455996 /* Assets.xcassets */; };
+		3A6891C51E48271000455996 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A6891C31E48271000455996 /* LaunchScreen.storyboard */; };
+		3A6891D01E48271100455996 /* textview____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6891CF1E48271100455996 /* textview____Tests.m */; };
+		3A6891DB1E48271100455996 /* textview____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6891DA1E48271100455996 /* textview____UITests.m */; };
+		3A68920D1E48272A00455996 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6891EB1E48272A00455996 /* IQNSArray+Sort.m */; };
+		3A68920E1E48272A00455996 /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6891ED1E48272A00455996 /* IQUIScrollView+Additions.m */; };
+		3A68920F1E48272A00455996 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6891EF1E48272A00455996 /* IQUITextFieldView+Additions.m */; };
+		3A6892101E48272A00455996 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6891F11E48272A00455996 /* IQUIView+Hierarchy.m */; };
+		3A6892111E48272A00455996 /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6891F31E48272A00455996 /* IQUIViewController+Additions.m */; };
+		3A6892121E48272A00455996 /* IQUIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6891F51E48272A00455996 /* IQUIWindow+Hierarchy.m */; };
+		3A6892131E48272A00455996 /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6891FA1E48272A00455996 /* IQKeyboardManager.m */; };
+		3A6892141E48272A00455996 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6891FC1E48272A00455996 /* IQKeyboardReturnKeyHandler.m */; };
+		3A6892151E48272A00455996 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6891FF1E48272A00455996 /* IQTextView.m */; };
+		3A6892161E48272A00455996 /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6892021E48272A00455996 /* IQBarButtonItem.m */; };
+		3A6892171E48272A00455996 /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6892041E48272A00455996 /* IQPreviousNextView.m */; };
+		3A6892181E48272A00455996 /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6892061E48272A00455996 /* IQTitleBarButtonItem.m */; };
+		3A6892191E48272A00455996 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6892081E48272A00455996 /* IQToolbar.m */; };
+		3A68921A1E48272A00455996 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A68920A1E48272A00455996 /* IQUIView+IQKeyboardToolbar.m */; };
+		3A68921B1E48272A00455996 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3A68920C1E48272A00455996 /* IQKeyboardManager.bundle */; };
+		3A6892361E48273000455996 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A68921E1E48273000455996 /* MASCompositeConstraint.m */; };
+		3A6892371E48273000455996 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6892211E48273000455996 /* MASConstraint.m */; };
+		3A6892381E48273000455996 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6892231E48273000455996 /* MASConstraintMaker.m */; };
+		3A6892391E48273000455996 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6892251E48273000455996 /* MASLayoutConstraint.m */; };
+		3A68923A1E48273000455996 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6892291E48273000455996 /* MASViewAttribute.m */; };
+		3A68923B1E48273000455996 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A68922B1E48273000455996 /* MASViewConstraint.m */; };
+		3A68923C1E48273000455996 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A68922D1E48273000455996 /* NSArray+MASAdditions.m */; };
+		3A68923D1E48273000455996 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6892301E48273000455996 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		3A68923E1E48273000455996 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6892321E48273000455996 /* View+MASAdditions.m */; };
+		3A68923F1E48273000455996 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6892351E48273000455996 /* ViewController+MASAdditions.m */; };
+		3A6892431E484B3600455996 /* UITextView+YLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6892421E484B3600455996 /* UITextView+YLTextView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A6891CC1E48271100455996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A6891AA1E48271000455996 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A6891B11E48271000455996;
+			remoteInfo = "textview键盘适配";
+		};
+		3A6891D71E48271100455996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A6891AA1E48271000455996 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A6891B11E48271000455996;
+			remoteInfo = "textview键盘适配";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A6891B21E48271000455996 /* textview键盘适配.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "textview键盘适配.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A6891B61E48271000455996 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A6891B81E48271000455996 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A6891B91E48271000455996 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A6891BB1E48271000455996 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3A6891BC1E48271000455996 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3A6891BF1E48271000455996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A6891C11E48271000455996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A6891C41E48271000455996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A6891C61E48271000455996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A6891CB1E48271100455996 /* textview键盘适配Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "textview键盘适配Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A6891CF1E48271100455996 /* textview____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "textview____Tests.m"; sourceTree = "<group>"; };
+		3A6891D11E48271100455996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A6891D61E48271100455996 /* textview键盘适配UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "textview键盘适配UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A6891DA1E48271100455996 /* textview____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "textview____UITests.m"; sourceTree = "<group>"; };
+		3A6891DC1E48271100455996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A6891EA1E48272A00455996 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
+		3A6891EB1E48272A00455996 /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		3A6891EC1E48272A00455996 /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
+		3A6891ED1E48272A00455996 /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
+		3A6891EE1E48272A00455996 /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
+		3A6891EF1E48272A00455996 /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
+		3A6891F01E48272A00455996 /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
+		3A6891F11E48272A00455996 /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		3A6891F21E48272A00455996 /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIViewController+Additions.h"; sourceTree = "<group>"; };
+		3A6891F31E48272A00455996 /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIViewController+Additions.m"; sourceTree = "<group>"; };
+		3A6891F41E48272A00455996 /* IQUIWindow+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIWindow+Hierarchy.h"; sourceTree = "<group>"; };
+		3A6891F51E48272A00455996 /* IQUIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIWindow+Hierarchy.m"; sourceTree = "<group>"; };
+		3A6891F71E48272A00455996 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
+		3A6891F81E48272A00455996 /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
+		3A6891F91E48272A00455996 /* IQKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManager.h; sourceTree = "<group>"; };
+		3A6891FA1E48272A00455996 /* IQKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardManager.m; sourceTree = "<group>"; };
+		3A6891FB1E48272A00455996 /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
+		3A6891FC1E48272A00455996 /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
+		3A6891FE1E48272A00455996 /* IQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
+		3A6891FF1E48272A00455996 /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
+		3A6892011E48272A00455996 /* IQBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQBarButtonItem.h; sourceTree = "<group>"; };
+		3A6892021E48272A00455996 /* IQBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQBarButtonItem.m; sourceTree = "<group>"; };
+		3A6892031E48272A00455996 /* IQPreviousNextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQPreviousNextView.h; sourceTree = "<group>"; };
+		3A6892041E48272A00455996 /* IQPreviousNextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQPreviousNextView.m; sourceTree = "<group>"; };
+		3A6892051E48272A00455996 /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTitleBarButtonItem.h; sourceTree = "<group>"; };
+		3A6892061E48272A00455996 /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTitleBarButtonItem.m; sourceTree = "<group>"; };
+		3A6892071E48272A00455996 /* IQToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQToolbar.h; sourceTree = "<group>"; };
+		3A6892081E48272A00455996 /* IQToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQToolbar.m; sourceTree = "<group>"; };
+		3A6892091E48272A00455996 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
+		3A68920A1E48272A00455996 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
+		3A68920C1E48272A00455996 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		3A68921D1E48273000455996 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		3A68921E1E48273000455996 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		3A68921F1E48273000455996 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		3A6892201E48273000455996 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		3A6892211E48273000455996 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		3A6892221E48273000455996 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		3A6892231E48273000455996 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		3A6892241E48273000455996 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		3A6892251E48273000455996 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		3A6892261E48273000455996 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		3A6892271E48273000455996 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		3A6892281E48273000455996 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		3A6892291E48273000455996 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		3A68922A1E48273000455996 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		3A68922B1E48273000455996 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		3A68922C1E48273000455996 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		3A68922D1E48273000455996 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		3A68922E1E48273000455996 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		3A68922F1E48273000455996 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		3A6892301E48273000455996 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		3A6892311E48273000455996 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		3A6892321E48273000455996 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		3A6892331E48273000455996 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		3A6892341E48273000455996 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		3A6892351E48273000455996 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		3A6892411E484B3600455996 /* UITextView+YLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+YLTextView.h"; sourceTree = "<group>"; };
+		3A6892421E484B3600455996 /* UITextView+YLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+YLTextView.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A6891AF1E48271000455996 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6891C81E48271100455996 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6891D31E48271100455996 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A6891A91E48271000455996 = {
+			isa = PBXGroup;
+			children = (
+				3A6891B41E48271000455996 /* textview键盘适配 */,
+				3A6891CE1E48271100455996 /* textview键盘适配Tests */,
+				3A6891D91E48271100455996 /* textview键盘适配UITests */,
+				3A6891B31E48271000455996 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A6891B31E48271000455996 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A6891B21E48271000455996 /* textview键盘适配.app */,
+				3A6891CB1E48271100455996 /* textview键盘适配Tests.xctest */,
+				3A6891D61E48271100455996 /* textview键盘适配UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A6891B41E48271000455996 /* textview键盘适配 */ = {
+			isa = PBXGroup;
+			children = (
+				3A6892401E484B3600455996 /* YLTextView */,
+				3A68921C1E48273000455996 /* Masonry */,
+				3A6891E81E48272A00455996 /* IQKeyboardManager */,
+				3A6891B81E48271000455996 /* AppDelegate.h */,
+				3A6891B91E48271000455996 /* AppDelegate.m */,
+				3A6891BB1E48271000455996 /* ViewController.h */,
+				3A6891BC1E48271000455996 /* ViewController.m */,
+				3A6891BE1E48271000455996 /* Main.storyboard */,
+				3A6891C11E48271000455996 /* Assets.xcassets */,
+				3A6891C31E48271000455996 /* LaunchScreen.storyboard */,
+				3A6891C61E48271000455996 /* Info.plist */,
+				3A6891B51E48271000455996 /* Supporting Files */,
+			);
+			path = "textview键盘适配";
+			sourceTree = "<group>";
+		};
+		3A6891B51E48271000455996 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A6891B61E48271000455996 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A6891CE1E48271100455996 /* textview键盘适配Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3A6891CF1E48271100455996 /* textview____Tests.m */,
+				3A6891D11E48271100455996 /* Info.plist */,
+			);
+			path = "textview键盘适配Tests";
+			sourceTree = "<group>";
+		};
+		3A6891D91E48271100455996 /* textview键盘适配UITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A6891DA1E48271100455996 /* textview____UITests.m */,
+				3A6891DC1E48271100455996 /* Info.plist */,
+			);
+			path = "textview键盘适配UITests";
+			sourceTree = "<group>";
+		};
+		3A6891E81E48272A00455996 /* IQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				3A6891E91E48272A00455996 /* Categories */,
+				3A6891F61E48272A00455996 /* Constants */,
+				3A6891F91E48272A00455996 /* IQKeyboardManager.h */,
+				3A6891FA1E48272A00455996 /* IQKeyboardManager.m */,
+				3A6891FB1E48272A00455996 /* IQKeyboardReturnKeyHandler.h */,
+				3A6891FC1E48272A00455996 /* IQKeyboardReturnKeyHandler.m */,
+				3A6891FD1E48272A00455996 /* IQTextView */,
+				3A6892001E48272A00455996 /* IQToolbar */,
+				3A68920B1E48272A00455996 /* Resources */,
+			);
+			path = IQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		3A6891E91E48272A00455996 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3A6891EA1E48272A00455996 /* IQNSArray+Sort.h */,
+				3A6891EB1E48272A00455996 /* IQNSArray+Sort.m */,
+				3A6891EC1E48272A00455996 /* IQUIScrollView+Additions.h */,
+				3A6891ED1E48272A00455996 /* IQUIScrollView+Additions.m */,
+				3A6891EE1E48272A00455996 /* IQUITextFieldView+Additions.h */,
+				3A6891EF1E48272A00455996 /* IQUITextFieldView+Additions.m */,
+				3A6891F01E48272A00455996 /* IQUIView+Hierarchy.h */,
+				3A6891F11E48272A00455996 /* IQUIView+Hierarchy.m */,
+				3A6891F21E48272A00455996 /* IQUIViewController+Additions.h */,
+				3A6891F31E48272A00455996 /* IQUIViewController+Additions.m */,
+				3A6891F41E48272A00455996 /* IQUIWindow+Hierarchy.h */,
+				3A6891F51E48272A00455996 /* IQUIWindow+Hierarchy.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		3A6891F61E48272A00455996 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3A6891F71E48272A00455996 /* IQKeyboardManagerConstants.h */,
+				3A6891F81E48272A00455996 /* IQKeyboardManagerConstantsInternal.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		3A6891FD1E48272A00455996 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				3A6891FE1E48272A00455996 /* IQTextView.h */,
+				3A6891FF1E48272A00455996 /* IQTextView.m */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		3A6892001E48272A00455996 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				3A6892011E48272A00455996 /* IQBarButtonItem.h */,
+				3A6892021E48272A00455996 /* IQBarButtonItem.m */,
+				3A6892031E48272A00455996 /* IQPreviousNextView.h */,
+				3A6892041E48272A00455996 /* IQPreviousNextView.m */,
+				3A6892051E48272A00455996 /* IQTitleBarButtonItem.h */,
+				3A6892061E48272A00455996 /* IQTitleBarButtonItem.m */,
+				3A6892071E48272A00455996 /* IQToolbar.h */,
+				3A6892081E48272A00455996 /* IQToolbar.m */,
+				3A6892091E48272A00455996 /* IQUIView+IQKeyboardToolbar.h */,
+				3A68920A1E48272A00455996 /* IQUIView+IQKeyboardToolbar.m */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		3A68920B1E48272A00455996 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A68920C1E48272A00455996 /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3A68921C1E48273000455996 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				3A68921D1E48273000455996 /* MASCompositeConstraint.h */,
+				3A68921E1E48273000455996 /* MASCompositeConstraint.m */,
+				3A68921F1E48273000455996 /* MASConstraint+Private.h */,
+				3A6892201E48273000455996 /* MASConstraint.h */,
+				3A6892211E48273000455996 /* MASConstraint.m */,
+				3A6892221E48273000455996 /* MASConstraintMaker.h */,
+				3A6892231E48273000455996 /* MASConstraintMaker.m */,
+				3A6892241E48273000455996 /* MASLayoutConstraint.h */,
+				3A6892251E48273000455996 /* MASLayoutConstraint.m */,
+				3A6892261E48273000455996 /* Masonry.h */,
+				3A6892271E48273000455996 /* MASUtilities.h */,
+				3A6892281E48273000455996 /* MASViewAttribute.h */,
+				3A6892291E48273000455996 /* MASViewAttribute.m */,
+				3A68922A1E48273000455996 /* MASViewConstraint.h */,
+				3A68922B1E48273000455996 /* MASViewConstraint.m */,
+				3A68922C1E48273000455996 /* NSArray+MASAdditions.h */,
+				3A68922D1E48273000455996 /* NSArray+MASAdditions.m */,
+				3A68922E1E48273000455996 /* NSArray+MASShorthandAdditions.h */,
+				3A68922F1E48273000455996 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				3A6892301E48273000455996 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				3A6892311E48273000455996 /* View+MASAdditions.h */,
+				3A6892321E48273000455996 /* View+MASAdditions.m */,
+				3A6892331E48273000455996 /* View+MASShorthandAdditions.h */,
+				3A6892341E48273000455996 /* ViewController+MASAdditions.h */,
+				3A6892351E48273000455996 /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		3A6892401E484B3600455996 /* YLTextView */ = {
+			isa = PBXGroup;
+			children = (
+				3A6892411E484B3600455996 /* UITextView+YLTextView.h */,
+				3A6892421E484B3600455996 /* UITextView+YLTextView.m */,
+			);
+			path = YLTextView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A6891B11E48271000455996 /* textview键盘适配 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A6891DF1E48271100455996 /* Build configuration list for PBXNativeTarget "textview键盘适配" */;
+			buildPhases = (
+				3A6891AE1E48271000455996 /* Sources */,
+				3A6891AF1E48271000455996 /* Frameworks */,
+				3A6891B01E48271000455996 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "textview键盘适配";
+			productName = "textview键盘适配";
+			productReference = 3A6891B21E48271000455996 /* textview键盘适配.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A6891CA1E48271100455996 /* textview键盘适配Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A6891E21E48271100455996 /* Build configuration list for PBXNativeTarget "textview键盘适配Tests" */;
+			buildPhases = (
+				3A6891C71E48271100455996 /* Sources */,
+				3A6891C81E48271100455996 /* Frameworks */,
+				3A6891C91E48271100455996 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A6891CD1E48271100455996 /* PBXTargetDependency */,
+			);
+			name = "textview键盘适配Tests";
+			productName = "textview键盘适配Tests";
+			productReference = 3A6891CB1E48271100455996 /* textview键盘适配Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A6891D51E48271100455996 /* textview键盘适配UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A6891E51E48271100455996 /* Build configuration list for PBXNativeTarget "textview键盘适配UITests" */;
+			buildPhases = (
+				3A6891D21E48271100455996 /* Sources */,
+				3A6891D31E48271100455996 /* Frameworks */,
+				3A6891D41E48271100455996 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A6891D81E48271100455996 /* PBXTargetDependency */,
+			);
+			name = "textview键盘适配UITests";
+			productName = "textview键盘适配UITests";
+			productReference = 3A6891D61E48271100455996 /* textview键盘适配UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A6891AA1E48271000455996 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "华腾软科";
+				TargetAttributes = {
+					3A6891B11E48271000455996 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = W4X96TYADK;
+						ProvisioningStyle = Automatic;
+					};
+					3A6891CA1E48271100455996 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 8NCEAQMY2L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A6891B11E48271000455996;
+					};
+					3A6891D51E48271100455996 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 8NCEAQMY2L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A6891B11E48271000455996;
+					};
+				};
+			};
+			buildConfigurationList = 3A6891AD1E48271000455996 /* Build configuration list for PBXProject "textview键盘适配" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A6891A91E48271000455996;
+			productRefGroup = 3A6891B31E48271000455996 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A6891B11E48271000455996 /* textview键盘适配 */,
+				3A6891CA1E48271100455996 /* textview键盘适配Tests */,
+				3A6891D51E48271100455996 /* textview键盘适配UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A6891B01E48271000455996 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6891C51E48271000455996 /* LaunchScreen.storyboard in Resources */,
+				3A6891C21E48271000455996 /* Assets.xcassets in Resources */,
+				3A68921B1E48272A00455996 /* IQKeyboardManager.bundle in Resources */,
+				3A6891C01E48271000455996 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6891C91E48271100455996 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6891D41E48271100455996 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A6891AE1E48271000455996 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6892371E48273000455996 /* MASConstraint.m in Sources */,
+				3A68923A1E48273000455996 /* MASViewAttribute.m in Sources */,
+				3A6892381E48273000455996 /* MASConstraintMaker.m in Sources */,
+				3A6892131E48272A00455996 /* IQKeyboardManager.m in Sources */,
+				3A6892151E48272A00455996 /* IQTextView.m in Sources */,
+				3A68920F1E48272A00455996 /* IQUITextFieldView+Additions.m in Sources */,
+				3A6892191E48272A00455996 /* IQToolbar.m in Sources */,
+				3A68923B1E48273000455996 /* MASViewConstraint.m in Sources */,
+				3A68923E1E48273000455996 /* View+MASAdditions.m in Sources */,
+				3A6892361E48273000455996 /* MASCompositeConstraint.m in Sources */,
+				3A6892141E48272A00455996 /* IQKeyboardReturnKeyHandler.m in Sources */,
+				3A68920D1E48272A00455996 /* IQNSArray+Sort.m in Sources */,
+				3A6892111E48272A00455996 /* IQUIViewController+Additions.m in Sources */,
+				3A6892391E48273000455996 /* MASLayoutConstraint.m in Sources */,
+				3A6892121E48272A00455996 /* IQUIWindow+Hierarchy.m in Sources */,
+				3A6892161E48272A00455996 /* IQBarButtonItem.m in Sources */,
+				3A6892431E484B3600455996 /* UITextView+YLTextView.m in Sources */,
+				3A68920E1E48272A00455996 /* IQUIScrollView+Additions.m in Sources */,
+				3A6891BD1E48271000455996 /* ViewController.m in Sources */,
+				3A6892181E48272A00455996 /* IQTitleBarButtonItem.m in Sources */,
+				3A68923D1E48273000455996 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				3A6891BA1E48271000455996 /* AppDelegate.m in Sources */,
+				3A6891B71E48271000455996 /* main.m in Sources */,
+				3A68923C1E48273000455996 /* NSArray+MASAdditions.m in Sources */,
+				3A68923F1E48273000455996 /* ViewController+MASAdditions.m in Sources */,
+				3A68921A1E48272A00455996 /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				3A6892171E48272A00455996 /* IQPreviousNextView.m in Sources */,
+				3A6892101E48272A00455996 /* IQUIView+Hierarchy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6891C71E48271100455996 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6891D01E48271100455996 /* textview____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A6891D21E48271100455996 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6891DB1E48271100455996 /* textview____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A6891CD1E48271100455996 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A6891B11E48271000455996 /* textview键盘适配 */;
+			targetProxy = 3A6891CC1E48271100455996 /* PBXContainerItemProxy */;
+		};
+		3A6891D81E48271100455996 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A6891B11E48271000455996 /* textview键盘适配 */;
+			targetProxy = 3A6891D71E48271100455996 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A6891BE1E48271000455996 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A6891BF1E48271000455996 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A6891C31E48271000455996 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A6891C41E48271000455996 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A6891DD1E48271100455996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A6891DE1E48271100455996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A6891E01E48271100455996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W4X96TYADK;
+				INFOPLIST_FILE = "textview键盘适配/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.htrk.rkoffice.tex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3A6891E11E48271100455996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W4X96TYADK;
+				INFOPLIST_FILE = "textview键盘适配/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.htrk.rkoffice.tex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3A6891E31E48271100455996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8NCEAQMY2L;
+				INFOPLIST_FILE = "textview键盘适配Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.htrk.rkoffice.textview----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/textview键盘适配.app/textview键盘适配";
+			};
+			name = Debug;
+		};
+		3A6891E41E48271100455996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8NCEAQMY2L;
+				INFOPLIST_FILE = "textview键盘适配Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.htrk.rkoffice.textview----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/textview键盘适配.app/textview键盘适配";
+			};
+			name = Release;
+		};
+		3A6891E61E48271100455996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8NCEAQMY2L;
+				INFOPLIST_FILE = "textview键盘适配UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.htrk.rkoffice.textview----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "textview键盘适配";
+			};
+			name = Debug;
+		};
+		3A6891E71E48271100455996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8NCEAQMY2L;
+				INFOPLIST_FILE = "textview键盘适配UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.htrk.rkoffice.textview----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "textview键盘适配";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A6891AD1E48271000455996 /* Build configuration list for PBXProject "textview键盘适配" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A6891DD1E48271100455996 /* Debug */,
+				3A6891DE1E48271100455996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A6891DF1E48271100455996 /* Build configuration list for PBXNativeTarget "textview键盘适配" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A6891E01E48271100455996 /* Debug */,
+				3A6891E11E48271100455996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A6891E21E48271100455996 /* Build configuration list for PBXNativeTarget "textview键盘适配Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A6891E31E48271100455996 /* Debug */,
+				3A6891E41E48271100455996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A6891E51E48271100455996 /* Build configuration list for PBXNativeTarget "textview键盘适配UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A6891E61E48271100455996 /* Debug */,
+				3A6891E71E48271100455996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A6891AA1E48271000455996 /* Project object */;
+}
