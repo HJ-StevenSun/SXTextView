@@ -1,26 +1,22 @@
+
 //
-//  UITextView+YLTextVIew.m
-// QQ:896525689
-// Email:zhangyuluios@163.com
-//                 _
-// /\   /\        | |
-// \ \_/ / _   _  | |     _   _
-//  \_ _/ | | | | | |    | | | |
-//   / \  | |_| | | |__/\| |_| |
-//   \_/   \__,_| |_|__,/ \__,_|
 //
-//  Created by shuogao on 16/9/9.
-//  Copyright © 2016年 tangjp. All rights reserved.
+//  Created by Steven on 16/9/9.
+//  Copyright © 2016年 Steven. All rights reserved.
 //
 
-#import "UITextView+YLTextView.h"
+#import "UITextView+SXTextView.h"
 #import <objc/runtime.h>
 @interface UITextView ()
-@property (nonatomic,strong) UILabel *placeholderLabel;//占位符
+/* 占位符 */
+@property (nonatomic,strong) UILabel *placeholderLabel;
 //@property (nonatomic,strong) UILabel *wordCountLabel;//计算字数
 @end
-@implementation UITextView (YLTextView)
+@implementation UITextView (SXTextView)
 
+/*******************Runtime 运行时*****************************/
+
+/* 以下为运行时需要添加关联的关键字 */
 static NSString *PLACEHOLDLABEL = @"placelabel";
 static NSString *PLACEHOLD = @"placehold";
 static NSString *WORDCOUNTLABEL = @"wordcount";
@@ -28,44 +24,46 @@ static const void *limitLengthKey = &limitLengthKey;
 
 + (void)load {
     
-    //方法交换     避免初始text直接赋值导致place同时存在的情况
+    /***方法交换,避免初始text直接赋值导致place同时存在的情况***/
     
-    //获取类方法
+    /*获取类方法*/
     Method setText = class_getInstanceMethod([UITextView class], @selector(setText:));
-    //获取实例方法
-    Method yl_setText = class_getInstanceMethod([UITextView class], @selector(yl_setText:));
-    method_exchangeImplementations(setText, yl_setText);
+    /*获取实例方法*/
+    Method sx_setText = class_getInstanceMethod([UITextView class], @selector(sx_setText:));
+    method_exchangeImplementations(setText, sx_setText);
     
     
 
     
     
 }
-- (NSString *)yl_setText:(NSString *)text {
+- (NSString *)sx_setText:(NSString *)text {
     
-    UITextView *yl_text = self;
-    [yl_text yl_setText:text];
+    UITextView *sx_text = self;
+    [sx_text sx_setText:text];
     if (text.length > 0) {
         self.placeholderLabel.hidden = YES;
     }
-    return yl_text.text;
+    return sx_text.text;
 }
 
-#pragma mark -- set/get...
+#pragma mark -- 运行时get/set 操作
 
 -(void)setPlaceholderLabel:(UILabel *)placeholderLabel {
 
+    /* 添加UILabel属性 */
     objc_setAssociatedObject(self, &PLACEHOLDLABEL, placeholderLabel, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (UILabel *)placeholderLabel {
-
+    /* 根据关联对象取出属性 */
     return objc_getAssociatedObject(self, &PLACEHOLDLABEL);
 
 }
 
 - (void)setPlaceholder:(NSString *)placeholder {
-
+    
+    /* 添加字符串Placeholder属性 */
     objc_setAssociatedObject(self, &PLACEHOLD, placeholder, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     [self setPlaceHolderLabel:placeholder];
 }

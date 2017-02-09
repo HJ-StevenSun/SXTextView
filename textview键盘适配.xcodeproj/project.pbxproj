@@ -40,7 +40,7 @@
 		3A68923D1E48273000455996 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6892301E48273000455996 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		3A68923E1E48273000455996 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6892321E48273000455996 /* View+MASAdditions.m */; };
 		3A68923F1E48273000455996 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6892351E48273000455996 /* ViewController+MASAdditions.m */; };
-		3A6892431E484B3600455996 /* UITextView+YLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6892421E484B3600455996 /* UITextView+YLTextView.m */; };
+		3A6892431E484B3600455996 /* UITextView+SXTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6892421E484B3600455996 /* UITextView+SXTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,8 +133,8 @@
 		3A6892331E48273000455996 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		3A6892341E48273000455996 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		3A6892351E48273000455996 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		3A6892411E484B3600455996 /* UITextView+YLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+YLTextView.h"; sourceTree = "<group>"; };
-		3A6892421E484B3600455996 /* UITextView+YLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+YLTextView.m"; sourceTree = "<group>"; };
+		3A6892411E484B3600455996 /* UITextView+SXTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+SXTextView.h"; sourceTree = "<group>"; };
+		3A6892421E484B3600455996 /* UITextView+SXTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+SXTextView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +185,7 @@
 		3A6891B41E48271000455996 /* textview键盘适配 */ = {
 			isa = PBXGroup;
 			children = (
-				3A6892401E484B3600455996 /* YLTextView */,
+				3A6892401E484B3600455996 /* SXTextView */,
 				3A68921C1E48273000455996 /* Masonry */,
 				3A6891E81E48272A00455996 /* IQKeyboardManager */,
 				3A6891B81E48271000455996 /* AppDelegate.h */,
@@ -337,12 +337,13 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
-		3A6892401E484B3600455996 /* YLTextView */ = {
+		3A6892401E484B3600455996 /* SXTextView */ = {
 			isa = PBXGroup;
 			children = (
-				3A6892411E484B3600455996 /* UITextView+YLTextView.h */,
-				3A6892421E484B3600455996 /* UITextView+YLTextView.m */,
+				3A6892411E484B3600455996 /* UITextView+SXTextView.h */,
+				3A6892421E484B3600455996 /* UITextView+SXTextView.m */,
 			);
+			name = SXTextView;
 			path = YLTextView;
 			sourceTree = "<group>";
 		};
@@ -499,7 +500,7 @@
 				3A6892391E48273000455996 /* MASLayoutConstraint.m in Sources */,
 				3A6892121E48272A00455996 /* IQUIWindow+Hierarchy.m in Sources */,
 				3A6892161E48272A00455996 /* IQBarButtonItem.m in Sources */,
-				3A6892431E484B3600455996 /* UITextView+YLTextView.m in Sources */,
+				3A6892431E484B3600455996 /* UITextView+SXTextView.m in Sources */,
 				3A68920E1E48272A00455996 /* IQUIScrollView+Additions.m in Sources */,
 				3A6891BD1E48271000455996 /* ViewController.m in Sources */,
 				3A6892181E48272A00455996 /* IQTitleBarButtonItem.m in Sources */,
